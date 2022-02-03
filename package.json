@@ -6,7 +6,7 @@
 	"private": true,
 	"scripts": {
 		"tailwind:css": "postcss public/css/tailwind.css -o public/css/style.css",
-		"start": "node ./bin/www"
+		"start": "npm run tailwind:css && node ./bin/www"
 	},
 	"keywords": [
 		"starter template",
